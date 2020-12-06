@@ -3,7 +3,8 @@
 Desarrollo de los modulos en Node Js para un servidor (sin http)
 ## Diagramas
 ### casos de uso
-- usuarioAnonimo accede a pagina principal http://3000:/welcome
+- de usuario-anonimo a usuario-no-registrado
+  ![imagen Uml]()
 - 
 
 

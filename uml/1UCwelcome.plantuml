@@ -1,0 +1,28 @@
+``` plantuml
+@startuml landing page#
+!include  ./skin/blue.plantuml
+header
+    acceso a login Page
+end header
+left to right direction
+ :A10usuarioAnonimo: -> (UCaccederAruta)
+note left 
+    la ruta de acceso estara
+    integrada por la clase ruta
+    y el puerto habilitado por
+    el entorno del sisema
+end note
+rectangle "sistema" { 
+    
+    :A20Sistema: - (UCcrearUsuarioNoRegistrado)
+    A20Sistema - (UCcrearRegistroDeEventos)
+    UCcrearUsuarioNoRegistrado --> :A22UsuarioNoRegistrado: 
+}
+UCaccederAruta - A20Sistema
+note right of A22UsuarioNoRegistrado
+    obtenemos la Ip de acceso
+    usuario con acceso limitado
+end note
+@enduml
+
+```

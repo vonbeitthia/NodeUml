@@ -1,6 +1,7 @@
 ``` plantuml
 @startuml landing page#
-!include  ./skin/blue.plantuml
+'!include  ./skin/blue.plantuml
+!include https://raw.githubusercontent.com/vonbeitthia/NodeUml/main/uml/skin/blue.plantuml
 header
     acceso a login Page
 end header
@@ -15,7 +16,7 @@ end note
 rectangle "sistema" { 
     
     :A20Sistema: - (UCcrearUsuarioNoRegistrado)
-    A20Sistema - (UCcrearRegistroDeEventos)
+    A20Sistema -- (UCcrearRegistroDeEventos)
     UCcrearUsuarioNoRegistrado --> :A22UsuarioNoRegistrado: 
 }
 UCaccederAruta - A20Sistema

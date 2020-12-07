@@ -1,0 +1,6 @@
+``` plantuml
+@startuml diagrama de actividad  acceso a landing page
+'!include  ./skin/blue.plantuml
+!include https://raw.githubusercontent.com/vonbeitthia/NodeUml/main/uml/skin/blue.plantuml
+@enduml
+```

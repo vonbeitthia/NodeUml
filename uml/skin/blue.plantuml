@@ -96,6 +96,7 @@ skinparam Handwritten false
 'base de datos
 skinparam DatabaseBackgroundColor LightSkyBlue/Wheat
 'allowmixing
+skinparam ActivityDiamondFontColor blue
 
 @enduml
 ```  

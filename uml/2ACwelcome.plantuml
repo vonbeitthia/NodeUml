@@ -2,5 +2,24 @@
 @startuml diagrama de actividad  acceso a landing page
 '!include  ./skin/blue.plantuml
 !include https://raw.githubusercontent.com/vonbeitthia/NodeUml/main/uml/skin/blue.plantuml
+|A10usuarioAnonimo|
+start
+|A53ControladorUsuarios|
+if ("! usuario") then (usuarioAnonimo)
+    :crearUsuarioNoRegistrado;
+
+endif
+:solicitudPagina;
+|A50ControladorHistorial| 
+:registrarLog;
+|A51ControladorUsuario| 
+if (usuario=usuario)
+|A52ControladorRutas|
+if (ruta=/principal) then (rutaValida)
+    :ServirPaginaPrincipal;
+endif
+|A54ControladorErrores| 
+
+stop
 @enduml
 ```

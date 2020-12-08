@@ -5,21 +5,33 @@
 |A10usuarioAnonimo|
 start
 |A53ControladorUsuarios|
-if ("! usuario") then (usuarioAnonimo)
+if (! usuario) then (usuarioAnonimo)
     :crearUsuarioNoRegistrado;
-
+    detach
 endif
-:solicitudPagina;
-|A50ControladorHistorial| 
-:registrarLog;
-|A51ControladorUsuario| 
-if (usuario=usuario)
-|A52ControladorRutas|
-if (ruta=/principal) then (rutaValida)
-    :ServirPaginaPrincipal;
+if (! rutas) then (rutasPermitidas)
+    :crearRutas;
+    note left
+        rutas permitidas
+        rutas bloqueadas
+        y rutas no encontradas
+    end note
 endif
-|A54ControladorErrores| 
-
-stop
+|A51ControladorRutas|
+if ( urlRequerida in rutasPermitidas) then
+    :servirPagina;
+    stop
+elseif ( urlRequerida in rutasBloqueadas) then
+    |A54ControladorErrores| 
+    :servirAccesoNoAutorizado;
+    stop
+else (rutaInvalida)
+    |A54ControladorErrores| 
+    :servirPaginaNoEncontrada;
+    note right
+        para rutas no encontradas
+    end note
+    stop
+endif
 @enduml
 ```

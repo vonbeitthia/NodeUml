@@ -1,0 +1,18 @@
+``` plantuml
+@startuml analisis de clases
+'!include  ./skin/blue.plantuml
+!include https://raw.githubusercontent.com/vonbeitthia/NodeUml/main/uml/skin/blue.plantuml
+package "Sistema" {
+ class env <<entorno>> {
+     puertoHttp : int
+ } 
+ file "./config/entorno.json" as file1 {
+ } 
+env <.. file1 : depende de
+} 
+note right
+    configuracion de entorno
+ end note
+allowmixing
+@enduml
+```

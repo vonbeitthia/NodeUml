@@ -10,6 +10,8 @@ Desarrollo de los modulos en Node Js para un servidor (sin http)
 
   ![imagen Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/vonbeitthia/NodeUml/main/uml/2ACwelcome.plantuml)
 
+### de Clases
+  - Configuraciones de entorno
 
 
 

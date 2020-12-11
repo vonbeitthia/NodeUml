@@ -11,5 +11,6 @@ start
 :Crear/ActualizarLog;
 |ServidorHttp| 
 :ArrancarServidor;
+stop
 @enduml
 ```

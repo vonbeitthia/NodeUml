@@ -17,8 +17,8 @@ note right
  end note
  
  package "Historial" {
-     file "./log/system.log"{}
-      
+     file "./log/system.log" as file2 {}
+
  } 
 @enduml
 ```

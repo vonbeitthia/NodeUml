@@ -16,7 +16,7 @@ Desarrollo de los modulos en Node Js para un servidor (sin http)
 ### de Clases
   - Configuraciones de entorno
 
-  ![imagen Uml](https://raw.githubusercontent.com/vonbeitthia/NodeUml/main/uml/3Clases.plantuml)
+  ![imagen Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/vonbeitthia/NodeUml/main/uml/3Clases.plantuml)
 
 
 

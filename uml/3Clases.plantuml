@@ -8,17 +8,28 @@ package "Configuraciones" #LightBlue  {
      puertoHttp : int
      archivoLog : "/log/system.log"
  } 
- file "./config/entorno.json" as file1 {
+ file "./config/config.json" as file1 {
  } 
 env ..> file1 : depende de
 } 
 note right
     configuracion de entorno
- end note
- 
- package "Historial" {
-     file "./log/system.log" as file2 {}
+end note
 
+ package "Historial" {
+     file "./log/system.log" as file2 {
+
+     }
+     class usuarioLog{
+         idUsuario : int
+         evento : str
+         fechaHora : date
+     } 
+     usuarioLog .> file2 : incluye
  } 
+
+ note right of Historial
+    Registro de eventos
+ end note
 @enduml
 ```

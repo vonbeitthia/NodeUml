@@ -1,0 +1,15 @@
+``` plantuml
+@startuml inicio de sistema
+'!include  ./skin/blue.plantuml
+!include https://raw.githubusercontent.com/vonbeitthia/NodeUml/main/uml/skin/blue.plantuml
+
+|ProgramaPrincipal| 
+start
+|Entorno|
+:leerEntorno;
+|logSistema|
+:Crear/ActualizarLog;
+|ServidorHttp| 
+:ArrancarServidor;
+@enduml
+```

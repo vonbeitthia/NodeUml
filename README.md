@@ -8,7 +8,10 @@ Desarrollo de los modulos en Node Js para un servidor (sin http)
 
  ### de Actividad
 
+  - Ingreso a sistema
   ![imagen Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/vonbeitthia/NodeUml/main/uml/2ACwelcome.plantuml)
+  - Inicio de sistema
+![imagen Uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/vonbeitthia/NodeUml/main/uml/4ACsysStart.plantuml)
 
 ### de Clases
   - Configuraciones de entorno
